@@ -1,0 +1,246 @@
+/*3、head.css---主要写页面顶部的样式*/
+/*顶部广告样式开始*/
+.head_banner {
+ height: 80px;
+ background-color: #d32338;
+}
+.head_banner .w {
+ position: relative;
+}
+.head_banner .w .close {
+ display: block;
+ width: 20px;
+ height: 20px;
+ font-size: 13px;
+ color: rgba(255,255,255,0.3);
+ line-height: 20px;
+ text-align: center;
+ background-color: rgba(0,0,0,0.3);
+ position: absolute;
+ top: 5px;
+ right: 5px;
+}
+.head_banner .w .close:hover {
+ color: rgba(255,255,255,0.8);
+ background-color: rgba(0,0,0,0.8);
+}
+/*顶部广告样式结束*/
+
+/*头部导航部分开始*/
+.head_nav {
+ height: 30px;
+ background-color: #e3e4e5;
+ border-bottom: 1px #ddd solid;
+}
+.head_nav .w ul.fl li {
+ margin-left: 200px;
+ height: 30px;
+ line-height: 30px;
+ text-align: center;
+ border: 1px #e3e4e5 solid;
+ border-bottom: none;
+}
+.head_nav .w ul.fl li:hover{
+ background-color: #fff;
+ border: 1px #e3e4e5 solid;
+ border-bottom: none;
+}
+.head_nav .w ul.fl li .iconfont {
+ /*margin-left: 10px;*/
+ color: #f10215;
+}
+/*.head_nav .w .fl .iconfont:hover {
+ background-color: #fff;
+ border: 1px #eee solid;
+ border-bottom: none;
+}*/
+.head_nav .w ul.fr li {
+ /*height: 10px;*/  
+ padding: 0 6px;
+ line-height: 30px;
+ float: left;
+}
+.head_nav .w ul.fr li a.red {
+ color: red;
+}
+.head_nav .w ul.fr li a:hover{
+ color: #f10215;
+}
+.head_nav .w ul.fr li .iconfont {
+ font-size: 9px;
+}
+.head_nav .w ul.fr li.line {
+ width: 1px;
+ height: 10px;
+ padding: 0;   /*li设置了padding撑开，line不用撑开，把padding设为0*/
+ background-color: #cccccc; 
+ margin: 11px 6px 0 6px;
+}
+/*.head_nav .w .fr li a {
+ font-size: 12px;
+ color: #999;
+}
+.head_nav .w .fr a:hover {
+ font-size: 12px;
+ color: #f10215;
+}*/
+.head_nav .w .fr li .public {
+ /*font-size: 9px;*/
+ border: 1px #e3e4e5 solid;
+ border-bottom: none;
+ height: 29px;
+}
+.head_nav .w .fr li .public:hover {
+ background-color: #fff;
+ border: 1px #ccc solid;
+ border-bottom: none;
+}
+
+/*小三角样式*/
+.head_nav .w .fr li.mobile {
+ position: relative;
+}
+.head_nav .w .fr li.mobile:after {
+ display: block;
+ content: "";
+ width: 0;
+ height: 0;
+ border-top: 8px transparent solid;
+ border-right: 8px transparent solid;
+ border-bottom: 8px #fff solid;
+ border-left: 8px transparent solid;
+ position: absolute;
+ top: 18px;
+ left: 20px;
+}
+/*二维码样式*/
+.head_nav .w .fr li.mobile i {
+ width: 58px;
+ height: 58px;
+ border: 1px #ccc solid;
+ display: block;
+ background: url(../img/mobile_qrcode.png) no-repeat center;
+ position: absolute;
+ left: 0px;
+ top: 31px;
+}
+/*头部导航部分结束*/
+/*头部搜索区域开始*/
+.head_search {
+ height: 140px;
+}
+.head_search .w {
+ position: relative;
+}
+.head_search .w .logo {
+ float: left;
+ position: absolute;
+ top: -30px;
+ /*margin-top: -30px;*/
+ box-shadow: 0px 0px 10px #ccc;
+}
+.head_search .w .search {
+ width: 548px;
+ height: 33px;
+ float: left;
+ margin-top: 25px;
+ margin-left: 320px;
+ border: 1px #f10215 solid;
+ position: relative;
+}
+.head_search .w .search .text {
+ width: 498px;
+ height: 33px;
+ float: left;
+ text-indent: 4px;   /*input框里的字体缩进*/
+}
+.head_search .w .search .btn {
+ width: 50px;
+ height: 33px;
+ background-color: #f10215;
+ float: left;
+}
+.head_search .w .search .iconfont {
+ position: absolute;
+ top: 7px;
+    right: 13px;
+ color: #fff;
+ font-size: 20px;
+}
+.head_search .w .shopcart {
+ float: left;
+ width: 188px;
+ height: 33px;
+ line-height: 33px;
+ text-align: center;
+ font-size: 12px;
+ color: #f10215;
+ background-color: #fff;
+ border: 1px #e3e4e5 solid;
+ margin-top: 25px;
+ margin-left: 35px;
+ position: relative;
+}
+.head_search .w .shopcart em {
+ display: block;
+ font-style: normal;
+ width: 14px;
+ height: 14px;
+ color: #fff;
+ line-height: 14px;
+ text-align: center;
+ border-radius: 50%;
+ background-color: #f10215;
+ position: absolute;
+ top: 5px;
+ right: 34px;
+}
+/*热词搜索样式*/
+.head_search .w .hotwords {
+ float: left;
+ margin-left: 320px;
+ margin-top: 10px;
+}
+.head_search .w .hotwords ul li {
+ float: left;
+ font: 12px/12px "微软雅黑";
+ margin-right: 10px;
+}
+.head_search .w .hotwords a.red {
+ color: red;
+}
+.head_search .w .hotwords a:hover {
+ color: red;
+}
+/*主导航栏样式*/
+.head_search .w .main_nav {
+ float: left;
+ margin-left: 230px;
+ margin-top: 31px;
+}
+.head_search .w .main_nav ul li {
+ float: left;
+ font: 700 16px/16px "微软雅黑";
+ margin-right: 30px;
+}
+.head_search .w .main_nav ul li.line {
+ width: 1px;
+ height: 10px;
+ background-color: #ccc;
+ margin: 3px 20px 0 -10px;
+}
+.head_search .w .main_nav ul li a {
+ color: #555;
+}
+.head_search .w .main_nav ul li a:hover {
+ color: red;
+}
+
+/*小广告*/
+.head_search .w .small_banner {
+ margin-top: 12px;
+ display: block;
+ float: right;
+}
+
+/*头部搜索区域结束*/
